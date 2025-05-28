@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Conversión de Temperatura";
+}
+
+<h2>Conversión de Celsius a Fahrenheit</h2>
+
+@if (ViewBag.Celsius == null)
+{
+    <p style="color: red;">@ViewBag.Mensaje</p>
+}
+else
+{
+    <p>Temperatura en Celsius: <strong>@ViewBag.Celsius</strong>°C</p>
+    <p>Temperatura en Fahrenheit: <strong>@ViewBag.Fahrenheit</strong>°F</p>
+}
+
+

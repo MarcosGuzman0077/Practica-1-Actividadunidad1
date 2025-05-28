@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Tabla de Multiplicar";
+}
+
+<h2>Tabla de Multiplicar</h2>
+
+@if (ViewBag.Tabla == null)
+{
+    <p style="color:red;">@ViewBag.Mensaje</p>
+}
+else
+{
+    <p>Tabla del número <strong>@ViewBag.Numero</strong>:</p>
+    <ul>
+        @foreach (var item in ViewBag.Tabla)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}
+
+

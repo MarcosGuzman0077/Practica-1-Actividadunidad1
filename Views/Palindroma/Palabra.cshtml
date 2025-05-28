@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Palabra Palíndroma";
+}
+
+<h2>Resultado</h2>
+
+@if (string.IsNullOrEmpty(ViewBag.Texto))
+{
+    <p>No se ingresó ninguna palabra.</p>
+}
+else
+{
+    <p>
+        La palabra "<strong>@ViewBag.Texto</strong>"
+        @if ((bool)ViewBag.EsPalindroma)
+        {
+            @:es palíndroma ✅
+        }
+        else
+        {
+            @:no es palíndroma ❌
+        }
+    </p>
+}
+
+

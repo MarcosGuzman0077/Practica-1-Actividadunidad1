@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Contador de Palabras";
+}
+
+<h2>Contador de Palabras</h2>
+
+@if (string.IsNullOrWhiteSpace(ViewBag.Texto))
+{
+    <p>No se ha proporcionado ninguna frase.</p>
+}
+else
+{
+    <p>La frase: <strong>@ViewBag.Texto</strong></p>
+    <p>Cantidad de palabras: <strong>@ViewBag.CantidadPalabras</strong></p>
+}
+
+

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Dominio del Correo";
+}
+
+<h2>Dominio del Correo Electrónico</h2>
+
+@if (ViewBag.Dominio != null)
+{
+    <p>Correo ingresado: <strong>@ViewBag.Correo</strong></p>
+    <p>Dominio: <strong>@ViewBag.Dominio</strong></p>
+}
+else
+{
+    <p style="color:red">@ViewBag.Mensaje</p>
+}
+
+
